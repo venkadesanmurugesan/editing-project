@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="book">
+        <div class="page" size="A4">
+          <div class="subpage">
+            <p style="margin-bottom: 8px">Upload images</p>
+
+            <label>
+              <input
+                onchange="showUploadedImages(event)"
+                type="file"
+                id="avatar"
+                name="avatar"
+                multiple
+                accept="image/png, image/jpeg"
+              />
+            </label>
+
+            <div class="grid-row" id="output"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async src="/main.js"></script>
+  </body>
+</html>
