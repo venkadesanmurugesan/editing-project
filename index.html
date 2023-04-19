@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
+
     <title>Vite App</title>
   </head>
   <body>
@@ -31,11 +29,15 @@
               />
             </label>
 
-            <div class="grid-row" id="cardImagesContainer"></div>
+            <div id="cardAsPdf">
+              <h1><center>Placed Students</center></h1>
+              <div class="grid-row" id="cardImagesContainer"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script></script>
     <script async src="/main.js"></script>
   </body>
 </html>

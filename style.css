@@ -71,7 +71,7 @@ body {
 }
 
 .grid-item {
-  width: 120px;
+  width: 150px;
   height: fit-content;
 }
 .grid-item > img {
